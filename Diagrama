@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile>
+    <diagram name="CoffeeMachineStateMachine">
+        <mxGraphModel>
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                
+                <!-- Estados -->
+                <mxCell id="2" value="Estado Inicial" style="ellipse;fillColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="50" y="20" width="30" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="Desligado" style="shape=rectangle;fillColor=#D9EAD3;" vertex="1" parent="1">
+                    <mxGeometry x="50" y="70" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="Pronto para Uso" style="shape=rectangle;fillColor=#F3F3F3;" vertex="1" parent="1">
+                    <mxGeometry x="200" y="70" width="140" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="Preparando Café" style="shape=rectangle;fillColor=#F3F3F3;" vertex="1" parent="1">
+                    <mxGeometry x="400" y="70" width="140" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="Café Pronto" style="shape=rectangle;fillColor=#F3F3F3;" vertex="1" parent="1">
+                    <mxGeometry x="600" y="70" width="140" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="Desligamento" style="shape=rectangle;fillColor=#F3F3F3;" vertex="1" parent="1">
+                    <mxGeometry x="800" y="70" width="140" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="Estado Final" style="ellipse;fillColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="950" y="20" width="30" height="30" as="geometry"/>
+                </mxCell>
+                
+                <!-- Transições -->
+                <mxCell id="9" value="Ligar" edge="1" parent="1" source="3" target="4">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="Selecionar Tipo de Café" edge="1" parent="1" source="4" target="5">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="Café Pronto" edge="1" parent="1" source="5" target="6">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="Retirar Café" edge="1" parent="1" source="6" target="4">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="Desligar" edge="1" parent="1" source="6" target="7">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="Desligar" edge="1" parent="1" source="7" target="8">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
