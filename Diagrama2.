@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile>
+    <diagram name="LoginProcessActivity">
+        <mxGraphModel>
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                
+                <!-- Estado Inicial -->
+                <mxCell id="2" value="" style="shape=ellipse;fillColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="50" y="20" width="30" height="30" as="geometry"/>
+                </mxCell>
+                
+                <!-- Exibir Tela de Login -->
+                <mxCell id="3" value="Exibir Tela de Login" style="shape=roundedRectangle;fillColor=#D9EAD3;" vertex="1" parent="1">
+                    <mxGeometry x="50" y="70" width="160" height="40" as="geometry"/>
+                </mxCell>
+                
+                <!-- Decisão: Usuário já registrado? -->
+                <mxCell id="4" value="Usuário já registrado?" style="shape=rhombus;fillColor=#F3F3F3;" vertex="1" parent="1">
+                    <mxGeometry x="80" y="130" width="120" height="60" as="geometry"/>
+                </mxCell>
+                
+                <!-- Pedir Credenciais de Login -->
+                <mxCell id="5" value="Pedir Credenciais de Login" style="shape=roundedRectangle;fillColor=#D9EAD3;" vertex="1" parent="1">
+                    <mxGeometry x="50" y="220" width="160" height="40" as="geometry"/>
+                </mxCell>
+                
+                <!-- Decisão: Credenciais corretas? -->
+                <mxCell id="6" value="Credenciais corretas?" style="shape=rhombus;fillColor=#F3F3F3;" vertex="1" parent="1">
+                    <mxGeometry x="80" y="280" width="120" height="60" as="geometry"/>
+                </mxCell>
+                
+                <!-- Permitir Acesso -->
+                <mxCell id="7" value="Permitir Acesso" style="shape=roundedRectangle;fillColor=#D9EAD3;" vertex="1" parent="1">
+                    <mxGeometry x="50" y="370" width="160" height="40" as="geometry"/>
+                </mxCell>
+                
+                <!-- Exibir Mensagem de Erro -->
+                <mxCell id="8" value="Exibir Mensagem de Erro" style="shape=roundedRectangle;fillColor=#F3F3F3;" vertex="1" parent="1">
+                    <mxGeometry x="250" y="280" width="160" height="40" as="geometry"/>
+                </mxCell>
+                
+                <!-- Registrar Novo Usuário -->
+                <mxCell id="9" value="Registrar Novo Usuário" style="shape=roundedRectangle;fillColor=#D9EAD3;" vertex="1" parent="1">
+                    <mxGeometry x="250" y="130" width="160" height="40" as="geometry"/>
+                </mxCell>
+                
+                <!-- Criar Conta -->
+                <mxCell id="10" value="Criar Conta" style="shape=roundedRectangle;fillColor=#D9EAD3;" vertex="1" parent="1">
+                    <mxGeometry x="250" y="190" width="160" height="40" as="geometry"/>
+                </mxCell>
+                
+                <!-- Estado Final -->
+                <mxCell id="11" value="" style="shape=ellipse;fillColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="50" y="440" width="30" height="30" as="geometry"/>
+                </mxCell>
+                
+                <!-- Conexões -->
+                <mxCell id="12" edge="1" parent="1" source="2" target="3"><mxGeometry relative="1" as="geometry"/></mxCell>
+                <mxCell id="13" edge="1" parent="1" source="3" target="4"><mxGeometry relative="1" as="geometry"/></mxCell>
+                <mxCell id="14" edge="1" parent="1" source="4" target="5"><mxGeometry relative="1" as="geometry"/></mxCell>
+                <mxCell id="15" edge="1" parent="1" source="4" target="9"><mxGeometry relative="1" as="geometry"/></mxCell>
+                <mxCell id="16" edge="1" parent="1" source="9" target="10"><mxGeometry relative="1" as="geometry"/></mxCell>
+                <mxCell id="17" edge="1" parent="1" source="10" target="7"><mxGeometry relative="1" as="geometry"/></mxCell>
+                <mxCell id="18" edge="1" parent="1" source="5" target="6"><mxGeometry relative="1" as="geometry"/></mxCell>
+                <mxCell id="19" edge="1" parent="1" source="6" target="7"><mxGeometry relative="1" as="geometry"/></mxCell>
+                <mxCell id="20" edge="1" parent="1" source="6" target="8"><mxGeometry relative="1" as="geometry"/></mxCell>
+                <mxCell id="21" edge="1" parent="1" source="8" target="5"><mxGeometry relative="1" as="geometry"/></mxCell>
+                <mxCell id="22" edge="1" parent="1" source="7" target="11"><mxGeometry relative="1" as="geometry"/></mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
